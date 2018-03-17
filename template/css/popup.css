@@ -1,0 +1,65 @@
+    
+          .popup
+          {
+             position:fixed;
+             top:0;left:0;top:0;bottom:0;
+             overflow:hidden;
+             background:rgba(0,0,0, 0.38);
+             z-index:900;
+             width: 100%;
+             height:100%;
+             padding:40px;
+            opacity: 0;
+            z-index: -1;
+          }
+          .popup .popup_block{
+            background: #fff;
+            margin: auto;
+            -webkit-transform: translate(0,-150%);
+            -ms-transform: translate(0,-150%);
+             transform: translate(0,-150%);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            -moz-transition: -moz-transform .3s ease-out;
+             -o-transition: -o-transform .3s ease-out;
+             transition: transform .3s ease-out;
+             border-radius:4px;
+           //  margin-top:50px;
+          }
+          .popup_header{
+            padding: 15px;
+            border-radius:inherit;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            background:#31C8E2;
+            color:#fff;
+          }
+          .popup_header span{
+            float: right;
+            display: inline-block;
+            overflow: none;
+          }
+          .popup_header span a{
+            text-decoration: none;
+            cursor: pointer;
+            color:#fff;
+            display: inline-block;
+          }
+          .popup_content
+          {
+            padding:15px;
+            min-height:120px;
+          }
+          .fade 
+          {
+            opacity: 0;
+            -webkit-transition: opacity .15s linear;
+            transition: opacity .15s linear;
+            z-index: -1;
+          }
+          .fade_in {opacity: 1;z-index: 100000;}
+          .dialog_in
+          {
+           -webkit-transform: translate(0,0) !important;
+           -ms-transform: translate(0,0) !important;
+            transform: translate(0,0) !important; 
+          }
